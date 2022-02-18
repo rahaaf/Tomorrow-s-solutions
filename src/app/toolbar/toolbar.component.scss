@@ -1,0 +1,33 @@
+.contenar{
+    padding:10px;
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .mat-toolbar.mat-primary{
+    // background: url('/assets/images/backgrounds/dark-material-bg.jpg') no-repeat;
+    background-color: #2f3b73;
+
+    // background-size: cover;
+    margin-bottom:10px;
+    // width: 278%
+  }
+  .example{
+     img{
+        max-width: 66%;
+        padding-left: 30px;
+
+     }
+
+  }
+  .example-icon{
+      margin-right: 30px;
+  }
+  .btn{
+    font-size: 20px;
+  }
+}
+  ::ngdeep body.theme-default .mat-toolbar.mat-primary {
+    background: #2f3b73;
+    color: white;
+}
+ 
