@@ -4,7 +4,7 @@
 // Import app.theme.scss
 @import "app/app.theme";
 html, body { height: 100%; 
-    overflow:auto !important;
+    overflow-y:auto !important;
     background-color: #fafafa;
 }
 body { margin: 0; font-family: Roboto, Muli, Helvetica Neue, Arial, sans-serif;; }

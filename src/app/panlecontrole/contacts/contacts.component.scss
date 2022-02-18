@@ -1,6 +1,7 @@
 @import "src/@fuse/scss/fuse";
 
 #contacts {
+    margin-top: 5%;
 
     .header {
 
@@ -52,9 +53,9 @@
 .page-layout.simple.fullwidth > .header, .page-layout.simple.inner-sidebar > .header{
     margin-top:5%;
 }
-.page-layout.simple.left-sidebar.inner-sidebar > .content > .sidebar.locked-open, .page-layout.simple.right-sidebar.inner-sidebar > .content > .sidebar.locked-open{
-    margin-top: -35%;
-}
+// .page-layout.simple.left-sidebar.inner-sidebar > .content > .sidebar.locked-open, .page-layout.simple.right-sidebar.inner-sidebar > .content > .sidebar.locked-open{
+//     margin-top:1%;
+// }
 
     .p-24 {
         padding: 24px !important;
