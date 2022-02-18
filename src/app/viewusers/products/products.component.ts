@@ -22,7 +22,7 @@ import { Contact } from 'app/panlecontrole/contacts/contact.model';
 export class EcommerceProductsComponent implements OnInit
 {
     dataSource: FilesDataSource | null;
-    displayedColumns = ['id','name', 'phone', 'email', 'birthday'];
+    displayedColumns = ['name', 'phone', 'email', 'birthday'];
 
     @ViewChild(MatPaginator, {static: true})
     paginator: MatPaginator;
@@ -191,9 +191,9 @@ export class FilesDataSource extends DataSource<any>
 
             switch ( this._matSort.active )
             {
-                case 'id':
-                    [propertyA, propertyB] = [a.id, b.id];
-                    break;
+                // case 'id':
+                //     [propertyA, propertyB] = [a.id, b.id];
+                //     break;
                 case 'name':
                     [propertyA, propertyB] = [a.name, b.name];
                     break;

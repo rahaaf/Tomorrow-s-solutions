@@ -66,8 +66,6 @@ const routes: Routes = [
     ],
     // providers   : [
     //     EcommerceUsersService,
-    //     EcommerceuserService,
-       
     // ]
 })
 export class EcommerceModule

@@ -2,9 +2,10 @@ import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { Contact } from 'app/panlecontrole/contacts/contact.model';
 
-@Injectable()
+@Injectable({
+    providedIn: 'root'
+})
 export class EcommerceUsersService implements Resolve<any>
 {
     Users:any[] = [] ;
