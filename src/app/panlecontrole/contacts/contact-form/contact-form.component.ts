@@ -18,6 +18,10 @@ export class ContactsContactFormDialogComponent
     contact: Contact;
     contactForm: FormGroup;
     dialogTitle: string;
+    accountingsoftware:false;
+    MobileApplication:false;
+    Officeapplications:false;
+    Websites:false;
     // labelPosition: 'male' | 'female' = 'female';
   
 
@@ -57,6 +61,7 @@ export class ContactsContactFormDialogComponent
             phone: ['', [Validators.required,Validators.pattern(this.phone)]],
             email: ['', [Validators.required, Validators.email]],
             jobTitle : ['', Validators.required],
+            address : ['', Validators.required],
             gender : ['', Validators.required],
             birthday: ['', [Validators.required]],
             notes: ['', [Validators.required]]
@@ -75,12 +80,10 @@ export class ContactsContactFormDialogComponent
     createContactForm(): FormGroup
     {
         return this._formBuilder.group({
-            id      : [this.contact.id],
+            // id      : [this.contact.id],
             name    : [this.contact.name],
             gender: [this.contact.gender],
-            avatar  : [this.contact.avatar],
-            // nickname: [this.contact.nickname],
-            // company : [this.contact.company],
+            // avatar  : [this.contact.avatar],
             jobTitle: [this.contact.jobTitle],
             email   : [this.contact.email],
             phone   : [this.contact.phone],

@@ -4,16 +4,11 @@ export class Contact
 {
     id: string;
     name: string;
-    gender: string;
+    gender: string[];
     avatar: string;
     // nickname: string;
     // company: string;
-    jobTitle:{
-        accountingsoftware:string,
-        MobileApplications:string,
-        Officeapplications:string,
-        Websites:string,
-    }[];
+    jobTitle:string[];
     email: string;
     phone: string;
     address: string;
